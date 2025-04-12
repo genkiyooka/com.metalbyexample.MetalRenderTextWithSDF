@@ -11,8 +11,8 @@
 #import "MBERenderer.h"
 
 @interface MBEViewController () <UIGestureRecognizerDelegate>
-@property (nonatomic, strong) MBERenderer *renderer;
-@property (nonatomic, strong) CADisplayLink *displayLink;
+@property (nonatomic, retain) MBERenderer *renderer;
+@property (nonatomic, retain) CADisplayLink *displayLink;
 @end
 
 @implementation MBEViewController

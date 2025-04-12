@@ -26,18 +26,18 @@ static MTLClearColor MBEClearColor = { 1, 1, 1, 1 };
 static float MBEFontAtlasSize = 2048;
 
 @interface MBERenderer ()
-@property (nonatomic, strong) CAMetalLayer *layer;
+@property (nonatomic, retain) CAMetalLayer *layer;
 // Long-lived Metal objects
-@property (nonatomic, strong) id<MTLDevice> device;
-@property (nonatomic, strong) id<MTLCommandQueue> commandQueue;
-@property (nonatomic, strong) id<MTLRenderPipelineState> pipelineState;
-@property (nonatomic, strong) id<MTLSamplerState> sampler;
+@property (nonatomic, retain) id<MTLDevice> device;
+@property (nonatomic, retain) id<MTLCommandQueue> commandQueue;
+@property (nonatomic, retain) id<MTLRenderPipelineState> pipelineState;
+@property (nonatomic, retain) id<MTLSamplerState> sampler;
 // Resources
-@property (nonatomic, strong) id<MTLTexture> depthTexture;
-@property (nonatomic, strong) MBEFontAtlas *fontAtlas;
-@property (nonatomic, strong) MBETextMesh *textMesh;
-@property (nonatomic, strong) id<MTLBuffer> uniformBuffer;
-@property (nonatomic, strong) id<MTLTexture> fontTexture;
+@property (nonatomic, retain) id<MTLTexture> depthTexture;
+@property (nonatomic, retain) MBEFontAtlas *fontAtlas;
+@property (nonatomic, retain) MBETextMesh *textMesh;
+@property (nonatomic, retain) id<MTLBuffer> uniformBuffer;
+@property (nonatomic, retain) id<MTLTexture> fontTexture;
 @end
 
 @implementation MBERenderer
