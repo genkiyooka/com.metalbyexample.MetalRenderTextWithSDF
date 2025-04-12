@@ -9,8 +9,12 @@
 @import UIKit;
 @import QuartzCore.CAMetalLayer;
 
+NS_ASSUME_NONNULL_BEGIN
+
 @interface MBEMetalView : UIView
 
-@property (nonatomic, readonly) CAMetalLayer *metalLayer;
+@property (retain, nonatomic, readonly) CAMetalLayer *metalLayer;
 
 @end
+
+NS_ASSUME_NONNULL_END

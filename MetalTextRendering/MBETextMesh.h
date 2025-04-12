@@ -10,6 +10,8 @@
 #import "MBEMesh.h"
 #import "MBEFontAtlas.h"
 
+NS_ASSUME_NONNULL_BEGIN
+
 @interface MBETextMesh : MBEMesh
 
 - (instancetype)initWithString:(NSString *)string
@@ -19,3 +21,5 @@
                         device:(id<MTLDevice>)device;
 
 @end
+
+NS_ASSUME_NONNULL_END

@@ -9,6 +9,8 @@
 @import Foundation;
 @import QuartzCore.CAMetalLayer;
 
+NS_ASSUME_NONNULL_BEGIN
+
 @interface MBERenderer : NSObject
 
 @property (nonatomic, assign) CGPoint textTranslation;
@@ -18,3 +20,5 @@
 - (void)draw;
 
 @end
+
+NS_ASSUME_NONNULL_END

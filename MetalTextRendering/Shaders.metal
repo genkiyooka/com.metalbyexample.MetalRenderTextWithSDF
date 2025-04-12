@@ -14,24 +14,11 @@
 
 using namespace metal;
 
-//struct Vertex
-//{
-//    packed_float4 position;
-//    packed_float2 texCoords;
-//};
-
 struct TransformedVertex
 {
     float4 position [[position]];
     float2 texCoords;
 };
-
-//struct Uniforms
-//{
-//    float4x4 modelMatrix;
-//    float4x4 viewProjectionMatrix;
-//    float4 foregroundColor;
-//};
 
 vertex TransformedVertex vertex_shade(constant const Vertex *vertices [[buffer(ShaderBufferIndex0)]],
                                       constant const MBEUniforms &uniforms [[buffer(ShaderBufferIndex1)]],

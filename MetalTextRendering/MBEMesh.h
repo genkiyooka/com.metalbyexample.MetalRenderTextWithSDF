@@ -9,9 +9,13 @@
 @import UIKit;
 @import Metal;
 
+NS_ASSUME_NONNULL_BEGIN
+
 @interface MBEMesh : NSObject
 
-@property (nonatomic, readonly) id<MTLBuffer> vertexBuffer;
-@property (nonatomic, readonly) id<MTLBuffer> indexBuffer;
+@property (retain, nonatomic, readonly) id<MTLBuffer> vertexBuffer;
+@property (retain, nonatomic, readonly) id<MTLBuffer> indexBuffer;
 
 @end
+
+NS_ASSUME_NONNULL_END
