@@ -17,10 +17,10 @@
 
 static NSString *const MBEFontName = @"HoeflerText-Regular";
 static float MBEFontDisplaySize = 72;
-static NSString *const MBESampleText = @"It was the best of times, it was the worst of times, "
+static NSString *const MBESampleText = @"It was the best of times, it was the worst of times, \n\n"
                                         "it was the age of wisdom, it was the age of foolishness...\n\n"
-                                        "Все счастливые семьи похожи друг на друга, "
-                                        "каждая несчастливая семья несчастлива по-своему.";
+                                        "Все счастливые семьи похожи друг на друга, \n\n"
+                                        "каждая несчастливая семья несчастлива по-своему.\n";
 static vector_float4 MBETextColor = { 0.1, 0.1, 0.1, 1 };
 static MTLClearColor MBEClearColor = { 1, 1, 1, 1 };
 static float MBEFontAtlasSize = 2048;
